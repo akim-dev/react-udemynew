@@ -5,9 +5,9 @@ import FeedbackItem from './components/FeedbackItem';
 
 export default function App() {
   return (
-    <div>
+    <div className="container">
       <Header text="Feedback UI" />
-      <FeedbackItem/>
+      <FeedbackItem />
     </div>
   );
 }
