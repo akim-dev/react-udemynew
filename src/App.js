@@ -3,6 +3,7 @@ import './style.css';
 import Header from './components/Header.jsx';
 import FeedbackList from './components/FeedbackList';
 import { useState } from 'react';
+import FeedbackItem from './components/FeedbackItem';
 import FeedbackData from './data/FeedbackData';
 
 export default function App() {
@@ -11,6 +12,7 @@ export default function App() {
   return (
     <div className="container">
       <Header text="Feedback UI" />
+      {/* <FeedbackItem /> */}
       <FeedbackList feedback={Feedback} />
     </div>
   );

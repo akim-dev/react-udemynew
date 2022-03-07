@@ -1,9 +1,9 @@
 import React from 'react';
 import { useState } from 'react';
 
-function FeedbackItem() {
-  const [rating, setRating] = useState(10);
-  const [text, setText] = useState('This is default text from useState');
+function FeedbackItem({ item }) {
+  // const [rating, setRating] = useState(10);
+  // const [text, setText] = useState('This is default text from useState');
 
   const hadleChangeRating = function () {
     setRating(function (prev) {
@@ -14,8 +14,8 @@ function FeedbackItem() {
 
   return (
     <div className="card">
-      <div className="num-display">{rating}</div>
-      <div className="text-display">{text}</div>
+      <div className="num-display">{item.rating}</div>
+      <div className="text-display">{item.text}</div>
       <button onClick={hadleChangeRating}>Click Me</button>
     </div>
   );

@@ -12,11 +12,7 @@ function FeedbackList({ feedback }) {
     <div className="feedback-list">
       {/* using function */}
       {feedback.map(function (item) {
-        return (
-          <div>
-            <FeedbackItem key={item.id} />
-          </div>
-        );
+        return <div>{item.rating}</div>;
       })}
 
       {/* using arrow function */}
