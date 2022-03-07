@@ -1,12 +1,13 @@
 import React from 'react';
 import './style.css';
 import Header from './components/Header.jsx';
+import FeedbackItem from './components/FeedbackItem';
 
 export default function App() {
   return (
     <div>
       <Header text="Feedback UI" />
-      <h2>My App</h2>
+      <FeedbackItem/>
     </div>
   );
 }
