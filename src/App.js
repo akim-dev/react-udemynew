@@ -7,13 +7,13 @@ import FeedbackItem from './components/FeedbackItem';
 import FeedbackData from './data/FeedbackData';
 
 export default function App() {
-  const [Feedback, setFeedback] = useState(FeedbackData);
+  const [feedback, setFeedback] = useState(FeedbackData);
 
   return (
     <div className="container">
       <Header text="Feedback UI" />
-      {/* <FeedbackItem /> */}
-      <FeedbackList feedback={Feedback} />
+      <FeedbackItem feedback={feedback} />
+      <FeedbackList feedback={feedback} />
     </div>
   );
 }
