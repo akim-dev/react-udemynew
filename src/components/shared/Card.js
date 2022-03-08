@@ -1,6 +1,7 @@
 import React from 'react';
 
-function Card() {
+function Card({ children }) {
+  console.log(children);
   return <div>Card</div>;
 }
 

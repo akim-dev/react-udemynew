@@ -11,14 +11,14 @@ function FeedbackList({ feedback }) {
   return (
     <div className="feedback-list">
       {/* using function */}
-      {feedback.map(function (item) {
+      {/* {feedback.map(function (item) {
         return <div>{item.rating}</div>;
-      })}
+      })} */}
 
       {/* using arrow function */}
-      {/* {feedback.map((item) => (
-        <div>{item.rating }</div>
-      ))} */}
+      {feedback.map((item) => (
+        <div>{item.rating}</div>
+      ))}
     </div>
   );
 }
